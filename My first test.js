@@ -22,7 +22,6 @@ describe('My first cypress test', () => {
         cy.get('.q-checkbox').click()
         cy.get("input.q-field__native.q-placeholder[id^='qf_'][placeholder='Введите адрес для поиска на карте']").type("Пятигорск")
         cy.get(".map > :nth-child(1) > :nth-child(2)").click()
-        cy.get('.q-uploader__input').type("C:\\Users\\nif31\\Downloads\\Wallpapers\\4828d1180e4a3b5da15bfaeb44b1ac8d.jpg")
     })
 
     it('Upload wrapper image', () => {
